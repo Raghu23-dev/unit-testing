@@ -1,15 +1,20 @@
-
 import React from "react";
 
 //getby,findby,queryby   --- rtl queries
 
-
 function Application() {
   return (
+    <>
+    <h1>Job application form</h1>
+    <h2> Section 1</h2>
     <form>
       <div>
         <label>Name</label>
         <input type="text" id="name" />
+      </div>
+      <div>
+        <label htmlFor="bio">Bio</label>
+        <textarea id="bio" name="bio" />
       </div>
       <div>
         <label>job location</label>
@@ -29,7 +34,8 @@ function Application() {
       </div>
       <button>Submit</button>
     </form>
-  )
+    </>
+  );
 }
 
-export default Application
+export default Application;
