@@ -9,7 +9,7 @@ function Application() {
     <h2> Section 1</h2>
     <form>
       <div>
-        <label>Name</label>
+        <label htmlFor="name">Name</label>
         <input type="text" id="name" />
       </div>
       <div>
