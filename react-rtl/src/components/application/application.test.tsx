@@ -33,6 +33,9 @@ describe('application', ()=>{
 
         const heading2 = screen.getByRole("heading",{level:2})
         expect(heading2).toBeInTheDocument()
+
+        const inputNode = screen.getByPlaceholderText('Username')
+        expect(inputNode).toBeInTheDocument()
     })
 
         

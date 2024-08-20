@@ -33,6 +33,8 @@ function Application() {
         </label>
       </div>
       <button>Submit</button>
+      <br />
+      <input placeholder="Username" />
     </form>
     </>
   );
