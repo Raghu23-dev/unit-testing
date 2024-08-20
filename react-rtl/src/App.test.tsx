@@ -4,7 +4,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
- // screen.debug();
+ // screen.debug();--> to see DOM while testing
 
   const linkElement = screen.getByText(/Name/i);
   expect(linkElement).toBeInTheDocument();
