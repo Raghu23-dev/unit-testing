@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SkillsProps } from "./skills.types";
 
 function Skills(props: SkillsProps) {
   const { skills } = props;
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(true);
+    }, 500);
+  }, []);
   return (
     <>
       <ul>
